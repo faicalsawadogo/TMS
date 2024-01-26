@@ -56,3 +56,5 @@ def ticket_queue(request):
     tickets = Ticket.objects.filter(ticket_status='Pending')
     context = {'tickets': tickets}
     return render(request, 'tickets/all_ticket_queue.html', context)
+
+# accept a ticket
